@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyectos",
+  "info": {
+    "singularName": "proyecto",
+    "pluralName": "proyectos",
+    "displayName": "Proyecto",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "initialDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "skills": {
+      "type": "json",
+      "required": true
+    },
+    "git": {
+      "type": "richtext",
+      "required": true
+    },
+    "url": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
